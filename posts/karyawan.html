@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Manajemen Karyawan</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info py-0 fixed-top">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/id/6/62/UNPAM_logo1.png"
+        alt="logo-uni"
+        width="40"
+      />
+      <a class="navbar-brand" href="index.html">UNIVERSITAS PAMULANG</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="side-bar">
+          <li>
+            <a href="../index.html">
+              <i class="fas fa-tachometer-alt fa-fw"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Karyawan</span
+            >
+          </li>
+          <li class="active">
+            <a href="karyawan.html">
+              <i class="fas fa-users fa-fw"></i>
+              Karyawan
+            </a>
+          </li>
+          <li>
+            <a href="tambah_karyawan.html">
+              <i class="fas fa-user-plus fa-fw"></i>
+              Tambah Karyawan
+            </a>
+          </li>
+          <li>
+            <a href="jabatan.html">
+              <i class="fas fa-briefcase fa-fw"></i>
+              Jabatan
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Absensi</span
+            >
+          </li>
+          <li>
+            <a href="absensi.html">
+              <i class="fas fa-calendar fa-fw"></i>
+              Absensi
+            </a>
+          </li>
+          <li>
+            <a href="izin.html">
+              <i class="fas fa-check fa-fw"></i>
+              Izin
+            </a>
+          </li>
+          <li>
+            <a href="lembur.html">
+              <i class="fas fa-clock fa-fw"></i>
+              Lembur
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Penggajian</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-invoice fa-fw"></i>
+              Slip Gaji
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-print fa-fw"></i>
+              Cetak Slip Gaji
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Laporan</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-alt fa-fw"></i>
+              Cetak Laporan
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Admin</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user-cog fa-fw"></i>
+              Pengguna
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-danger">
+              <i class="fas fa-sign-out-alt fa-fw"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto"></ul>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="about.jpg"
+                alt="Nama Mahasiswa"
+                width="40"
+                class="border mp-1 rounded-circle"
+              />
+              Iqbal Maulana
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="content">
+      <div class="alert bg-info">
+        <span class="display-8 text-white h2">Dashboard</span>
+      </div>
+
+      <div class="card mt-4 mb-5">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h4>Data Karyawan</h4>
+            </div>
+            <div class="col-auto">
+              <a href="create.html" class="btn btn-primary rounded-0 px-3">
+                <span class="rounded-pill">
+                  <i class="fas fa-plus fa-fw"></i>
+                </span>
+                Tambah Karyawan
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-bordered table mb-0">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Kode</th>
+                  <th>Nama</th>
+                  <th>Email</th>
+                  <th>Alamat</th>
+                  <th>Jabatan</th>
+                  <th width="150" class="text-center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>KD001</td>
+                  <td>Ahmad</td>
+                  <td>ahmad@mail.com</td>
+                  <td>Jl. Merdeka No. 1, Jakarta</td>
+                  <td>Manager</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>KD002</td>
+                  <td>Siti</td>
+                  <td>siti@mail.com</td>
+                  <td>Jl. Kebon Jeruk No. 5, Bandung</td>
+                  <td>Staff HR</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>KD003</td>
+                  <td>Budi</td>
+                  <td>budi@mail.com</td>
+                  <td>Jl. Sudirman No. 10, Surabaya</td>
+                  <td>Marketing</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>KD004</td>
+                  <td>Rina</td>
+                  <td>rina@mail.com</td>
+                  <td>Jl. Pahlawan No. 12, Yogyakarta</td>
+                  <td>IT Support</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>KD005</td>
+                  <td>Joko</td>
+                  <td>joko@mail.com</td>
+                  <td>Jl. Diponegoro No. 8, Medan</td>
+                  <td>Finance</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>KD006</td>
+                  <td>Lina</td>
+                  <td>lina@mail.com</td>
+                  <td>Jl. Cendana No. 3, Bali</td>
+                  <td>Designer</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>KD007</td>
+                  <td>Fahmi</td>
+                  <td>fahmi@mail.com</td>
+                  <td>Jl. Anggrek No. 7, Semarang</td>
+                  <td>Sales</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>KD008</td>
+                  <td>Nina</td>
+                  <td>nina@mail.com</td>
+                  <td>Jl. Mawar No. 4, Palembang</td>
+                  <td>Customer Service</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>KD009</td>
+                  <td>Tina</td>
+                  <td>tina@mail.com</td>
+                  <td>Jl. Kenanga No. 9, Makassar</td>
+                  <td>Logistics</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>KD010</td>
+                  <td>Andi</td>
+                  <td>andi@mail.com</td>
+                  <td>Jl. Flamboyan No. 2, Batam</td>
+                  <td>Quality Control</td>
+                  <td class="text-center">
+                    <button class="btn btn-sm btn-light rounded-pill">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-sm btn-info rounded-pill">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-sm btn-danger rounded-pill">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer py-4">
+          <nav>
+            <ul class="pagination justify-content-center mb-0">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>

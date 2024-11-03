@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Manajemen Karyawan</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info py-0 fixed-top">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/id/6/62/UNPAM_logo1.png"
+        alt="logo-uni"
+        width="40"
+      />
+      <a class="navbar-brand" href="index.html">UNIVERSITAS PAMULANG</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="side-bar">
+          <li class="active">
+            <a href="#">
+              <i class="fas fa-tachometer-alt fa-fw"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Karyawan</span
+            >
+          </li>
+          <li>
+            <a href="posts/karyawan.html">
+              <i class="fas fa-users fa-fw"></i>
+              Karyawan
+            </a>
+          </li>
+          <li>
+            <a href="posts/tambah_karyawan.html">
+              <i class="fas fa-user-plus fa-fw"></i>
+              Tambah Karyawan
+            </a>
+          </li>
+          <li>
+            <a href="posts/jabatan.html">
+              <i class="fas fa-briefcase fa-fw"></i>
+              Jabatan
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Absensi</span
+            >
+          </li>
+          <li>
+            <a href="posts/absensi.html">
+              <i class="fas fa-calendar fa-fw"></i>
+              Absensi
+            </a>
+          </li>
+          <li>
+            <a href="posts/izin.html">
+              <i class="fas fa-check fa-fw"></i>
+              Izin
+            </a>
+          </li>
+          <li>
+            <a href="posts/lembur.html">
+              <i class="fas fa-clock fa-fw"></i>
+              Lembur
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Penggajian</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-invoice fa-fw"></i>
+              Slip Gaji
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-print fa-fw"></i>
+              Cetak Slip Gaji
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Laporan</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-alt fa-fw"></i>
+              Cetak Laporan
+            </a>
+          </li>
+          <li class="nav-item">
+            <span class="navbar-text text-secondary font-weight-bold"
+              >Menu Admin</span
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user-cog fa-fw"></i>
+              Pengguna
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-danger">
+              <i class="fas fa-sign-out-alt fa-fw"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto"></ul>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="img/about.jpg" alt="about"
+                alt="Nama Mahasiswa"
+                width="40"
+                class="border mp-1 rounded-circle"
+              />
+              Iqbal Maulana
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="content">
+      <!-- jumbotron -->
+      <div class="jumbotron bg-info">
+        <h1 class="display-6 text-white">
+          Sistem Informasi Manajemen Karyawan
+        </h1>
+        <h2 class="display-8 text-white">Admin Dashboard</h2>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-3">
+          <div class="row no-gutters shadow shadow">
+            <div
+              class="col-auto bg-primary text-white p-4 d-flex align-items-center"
+            >
+              <i class="fas fa-users fa-2x"></i>
+            </div>
+            <div class="col bg-white p-3">
+              <span>Data Pegawai</span>
+              <h4>88</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row no-gutters shadow">
+            <div
+              class="col-auto bg-info text-white p-4 d-flex align-items-center"
+            >
+              <i class="fas fa-calendar fa-2x"></i>
+            </div>
+            <div class="col bg-white p-3">
+              <span>Absensi : 19 Mei 2024</span>
+              <h4>60</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row no-gutters shadow">
+            <div
+              class="col-auto bg-warning text-white p-4 d-flex align-items-center"
+            >
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="col bg-white p-3">
+              <span>Izin Menunggu Konfirmasi</span>
+              <h4>10</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row no-gutters shadow">
+            <div
+              class="col-auto bg-secondary text-white p-4 d-flex align-items-center"
+            >
+              <i class="fas fa-check fa-2x"></i>
+            </div>
+            <div class="col bg-white p-3">
+              <span>Lembur Menunggu Konfirmasi</span>
+              <h4>4</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
